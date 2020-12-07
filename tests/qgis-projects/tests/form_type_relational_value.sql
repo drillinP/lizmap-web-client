@@ -26,7 +26,9 @@ SET default_with_oids = false;
 CREATE TABLE tests_projects.table_for_form(
     gid integer NOT NULL,
     "titre" text,
-    "type" text[],
+    "test" text[],
+    "test_not_null_only" text[],
+    "test_empty_value_only" text[],
     geom public.geometry(Point,2154)
 );
 
@@ -101,11 +103,12 @@ ALTER TABLE ONLY tests_projects.table_for_relationnal_value
 -- INSERT DATA IN table_for_form
 --
 
-INSERT INTO tests_projects.table_for_form(gid, "titre", "type") VALUES(1, 'test', '{"A06"}');
+INSERT INTO tests_projects.table_for_form VALUES(1, 'test', '{"A06"}', '{"A07"}', '{"A08"}');
 
 --
 -- INSERT DATA IN table_for_relationnal_value
 --
 
-INSERT INTO tests_projects.table_for_relationnal_value(gid, "label", "code") VALUES(1, 'Nature', 'A06');
+INSERT INTO tests_projects.table_for_relationnal_value(gid, "label", "code") VALUES(1, 'Flower', 'A06');
 INSERT INTO tests_projects.table_for_relationnal_value(gid, "label", "code") VALUES(2, 'water', 'A07');
+INSERT INTO tests_projects.table_for_relationnal_value(gid, "label", "code") VALUES(3, 'Tree', 'A08');

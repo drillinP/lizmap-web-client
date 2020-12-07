@@ -1,6 +1,7 @@
 The field `type` for the `table_for_form` layer is a relationnal value field. The multiples selection was allowed.
-* [ ] Configure this field without allowing the non-null constraints and the default empty value. See on lizmap in editing mode the field is not required and have no empty value.
+Click on the only point and start the update field
+* [ ] Check that the filed `test` is not required and not have an empty value in the list.
 
-* [ ] Configure this field with allowing the non-null constraints and not the default empty value. See on lizmap in editing mode the field is required and have an empty value.
+* [ ] Check that the filed `Test constraint not null only` is required and not have an empty value in the list.
 
-* [ ] Configure this field without allowing the non-null constraints and allow default empty value. See on lizmap in editing mode the field is not required and have an empty value.
+* [ ] Check that the filed `Test with empty value only` is not required but have an empty value in the list.

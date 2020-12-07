@@ -19,15 +19,14 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties></customproperties>
-    <layer-tree-layer checked="Qt::Checked" expanded="1" id="table_for_relationnal_value_dc724c81_0004_4aec_89bf_2fa1e80fccb8" legend_exp="" name="table_for_relationnal_value" providerKey="postgres" source="dbname='qgis' service='lizmapdb' sslmode=disable key='gid' checkPrimaryKeyUnicity='1' table=&quot;tests_projects&quot;.&quot;table_for_relationnal_value&quot; sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="1" id="table_for_relationnal_value_dc724c81_0004_4aec_89bf_2fa1e80fccb8" legend_exp="" name="table_for_relationnal_value" providerKey="postgres" source="dbname='lizmap' service='lizmapdb' sslmode=disable key='gid' checkPrimaryKeyUnicity='1' table=&quot;tests_projects&quot;.&quot;table_for_relationnal_value&quot; sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="1" id="table_for_form_8a6a46b7_21ef_47d6_a5cd_134f6e84dace" legend_exp="" name="table_for_form" providerKey="postgres" source="dbname='qgis' service='lizmapdb' sslmode=disable key='gid' srid=2154 type=Point checkPrimaryKeyUnicity='1' table=&quot;tests_projects&quot;.&quot;table_for_form&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="1" id="table_for_form_8a6a46b7_21ef_47d6_a5cd_134f6e84dace" legend_exp="" name="table_for_form" providerKey="postgres" source="dbname='lizmap' service='lizmapdb' sslmode=disable key='gid' srid=2154 type=Point checkPrimaryKeyUnicity='1' table=&quot;tests_projects&quot;.&quot;table_for_form&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
     <custom-order enabled="0">
       <item>table_for_form_8a6a46b7_21ef_47d6_a5cd_134f6e84dace</item>
-      <item>table_for_relationnal_value_dc724c81_0004_4aec_89bf_2fa1e80fccb8</item>
     </custom-order>
   </layer-tree-group>
   <snapping-settings enabled="0" intersection-snapping="0" mode="2" tolerance="12" type="1" unit="1">
@@ -39,10 +38,10 @@
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
-      <xmin>-1578.96240732856676914</xmin>
-      <ymin>834365.92193293920718133</ymin>
-      <xmax>360019.06720050785224885</xmax>
-      <ymax>1143184.90667965332977474</ymax>
+      <xmin>71274.64904319541528821</xmin>
+      <ymin>730234.84378637874033302</ymin>
+      <xmax>432872.67865103180520236</xmax>
+      <ymax>1039053.82853309286292642</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -79,13 +78,13 @@
   <projectlayers>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Point" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+08" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector" wkbType="Point">
       <extent>
-        <xmin>182289.06094065637444146</xmin>
-        <ymin>992419.86195237562060356</ymin>
-        <xmax>182289.06094065637444146</xmax>
-        <ymax>992419.86195237562060356</ymax>
+        <xmin>257416.69182337401434779</xmin>
+        <ymin>918408.5959139047190547</ymin>
+        <xmax>257416.69182337401434779</xmax>
+        <ymax>918408.5959139047190547</ymax>
       </extent>
       <id>table_for_form_8a6a46b7_21ef_47d6_a5cd_134f6e84dace</id>
-      <datasource>dbname='qgis' service='lizmapdb' sslmode=disable key='gid' srid=2154 type=Point checkPrimaryKeyUnicity='1' table="tests_projects"."table_for_form" (geom) sql=</datasource>
+      <datasource>dbname='lizmap' service='lizmapdb' sslmode=disable key='gid' srid=2154 type=Point checkPrimaryKeyUnicity='1' table="tests_projects"."table_for_form" (geom) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -209,6 +208,7 @@
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
         <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+08" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""></fontProperties>
+          <attribute color="#000000" field="" label=""></attribute>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="0" priority="0" showAll="1" zIndex="0">
@@ -239,7 +239,7 @@
             </config>
           </editWidget>
         </field>
-        <field name="type">
+        <field name="test">
           <editWidget type="ValueRelation">
             <config>
               <Option type="Map">
@@ -250,7 +250,47 @@
                 <Option name="Layer" type="QString" value="table_for_relationnal_value_dc724c81_0004_4aec_89bf_2fa1e80fccb8"></Option>
                 <Option name="LayerName" type="QString" value="table_for_relationnal_value"></Option>
                 <Option name="LayerProviderName" type="QString" value="postgres"></Option>
-                <Option name="LayerSource" type="QString" value="dbname='qgis' service='lizmapdb' sslmode=disable key='gid' checkPrimaryKeyUnicity='1' table=&quot;tests_projects&quot;.&quot;table_for_relationnal_value&quot; sql="></Option>
+                <Option name="LayerSource" type="QString" value="dbname='lizmap' service='lizmapdb' sslmode=disable key='gid' checkPrimaryKeyUnicity='1' table=&quot;tests_projects&quot;.&quot;table_for_relationnal_value&quot; sql="></Option>
+                <Option name="NofColumns" type="int" value="1"></Option>
+                <Option name="OrderByValue" type="bool" value="true"></Option>
+                <Option name="UseCompleter" type="bool" value="false"></Option>
+                <Option name="Value" type="QString" value="label"></Option>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="test_not_null_only">
+          <editWidget type="ValueRelation">
+            <config>
+              <Option type="Map">
+                <Option name="AllowMulti" type="bool" value="true"></Option>
+                <Option name="AllowNull" type="bool" value="false"></Option>
+                <Option name="FilterExpression" type="QString" value=""></Option>
+                <Option name="Key" type="QString" value="code"></Option>
+                <Option name="Layer" type="QString" value="table_for_relationnal_value_dc724c81_0004_4aec_89bf_2fa1e80fccb8"></Option>
+                <Option name="LayerName" type="QString" value="table_for_relationnal_value"></Option>
+                <Option name="LayerProviderName" type="QString" value="postgres"></Option>
+                <Option name="LayerSource" type="QString" value="dbname='lizmap' service='lizmapdb' sslmode=disable key='gid' checkPrimaryKeyUnicity='1' table=&quot;tests_projects&quot;.&quot;table_for_relationnal_value&quot; sql="></Option>
+                <Option name="NofColumns" type="int" value="1"></Option>
+                <Option name="OrderByValue" type="bool" value="true"></Option>
+                <Option name="UseCompleter" type="bool" value="false"></Option>
+                <Option name="Value" type="QString" value="label"></Option>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="test_empty_value_only">
+          <editWidget type="ValueRelation">
+            <config>
+              <Option type="Map">
+                <Option name="AllowMulti" type="bool" value="true"></Option>
+                <Option name="AllowNull" type="bool" value="true"></Option>
+                <Option name="FilterExpression" type="QString" value=""></Option>
+                <Option name="Key" type="QString" value="code"></Option>
+                <Option name="Layer" type="QString" value="table_for_relationnal_value_dc724c81_0004_4aec_89bf_2fa1e80fccb8"></Option>
+                <Option name="LayerName" type="QString" value="table_for_relationnal_value"></Option>
+                <Option name="LayerProviderName" type="QString" value="postgres"></Option>
+                <Option name="LayerSource" type="QString" value="dbname='lizmap' service='lizmapdb' sslmode=disable key='gid' checkPrimaryKeyUnicity='1' table=&quot;tests_projects&quot;.&quot;table_for_relationnal_value&quot; sql="></Option>
                 <Option name="NofColumns" type="int" value="1"></Option>
                 <Option name="OrderByValue" type="bool" value="true"></Option>
                 <Option name="UseCompleter" type="bool" value="false"></Option>
@@ -263,24 +303,32 @@
       <aliases>
         <alias field="gid" index="0" name=""></alias>
         <alias field="titre" index="1" name=""></alias>
-        <alias field="type" index="2" name=""></alias>
+        <alias field="test" index="2" name=""></alias>
+        <alias field="test_not_null_only" index="3" name="Test constraint not null only"></alias>
+        <alias field="test_empty_value_only" index="4" name="Test with empty value only"></alias>
       </aliases>
       <excludeAttributesWMS></excludeAttributesWMS>
       <excludeAttributesWFS></excludeAttributesWFS>
       <defaults>
         <default applyOnUpdate="0" expression="" field="gid"></default>
         <default applyOnUpdate="0" expression="" field="titre"></default>
-        <default applyOnUpdate="0" expression="" field="type"></default>
+        <default applyOnUpdate="0" expression="" field="test"></default>
+        <default applyOnUpdate="0" expression="" field="test_not_null_only"></default>
+        <default applyOnUpdate="0" expression="" field="test_empty_value_only"></default>
       </defaults>
       <constraints>
         <constraint constraints="3" exp_strength="0" field="gid" notnull_strength="1" unique_strength="1"></constraint>
         <constraint constraints="0" exp_strength="0" field="titre" notnull_strength="0" unique_strength="0"></constraint>
-        <constraint constraints="0" exp_strength="0" field="type" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="test" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="1" exp_strength="0" field="test_not_null_only" notnull_strength="2" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="test_empty_value_only" notnull_strength="0" unique_strength="0"></constraint>
       </constraints>
       <constraintExpressions>
         <constraint desc="" exp="" field="gid"></constraint>
         <constraint desc="" exp="" field="titre"></constraint>
-        <constraint desc="" exp="" field="type"></constraint>
+        <constraint desc="" exp="" field="test"></constraint>
+        <constraint desc="" exp="" field="test_not_null_only"></constraint>
+        <constraint desc="" exp="" field="test_empty_value_only"></constraint>
       </constraintExpressions>
       <expressionfields></expressionfields>
       <attributeactions>
@@ -290,8 +338,10 @@
         <columns>
           <column hidden="0" name="gid" type="field" width="-1"></column>
           <column hidden="0" name="titre" type="field" width="-1"></column>
-          <column hidden="0" name="type" type="field" width="-1"></column>
           <column hidden="1" type="actions" width="-1"></column>
+          <column hidden="0" name="test" type="field" width="-1"></column>
+          <column hidden="0" name="test_not_null_only" type="field" width="-1"></column>
+          <column hidden="0" name="test_empty_value_only" type="field" width="-1"></column>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
@@ -323,11 +373,17 @@ def my_form_open(dialog, layer, feature):
       <editorlayout>generatedlayout</editorlayout>
       <editable>
         <field editable="1" name="gid"></field>
+        <field editable="1" name="test"></field>
+        <field editable="1" name="test_empty_value_only"></field>
+        <field editable="1" name="test_not_null_only"></field>
         <field editable="1" name="titre"></field>
         <field editable="1" name="type"></field>
       </editable>
       <labelOnTop>
         <field labelOnTop="0" name="gid"></field>
+        <field labelOnTop="0" name="test"></field>
+        <field labelOnTop="0" name="test_empty_value_only"></field>
+        <field labelOnTop="0" name="test_not_null_only"></field>
         <field labelOnTop="0" name="titre"></field>
         <field labelOnTop="0" name="type"></field>
       </labelOnTop>
@@ -337,7 +393,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="No geometry" hasScaleBasedVisibilityFlag="0" maxScale="0" minScale="1e+08" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" styleCategories="AllStyleCategories" type="vector" wkbType="NoGeometry">
       <id>table_for_relationnal_value_dc724c81_0004_4aec_89bf_2fa1e80fccb8</id>
-      <datasource>dbname='qgis' service='lizmapdb' sslmode=disable key='gid' checkPrimaryKeyUnicity='1' table="tests_projects"."table_for_relationnal_value" sql=</datasource>
+      <datasource>dbname='lizmap' service='lizmapdb' sslmode=disable key='gid' checkPrimaryKeyUnicity='1' table="tests_projects"."table_for_relationnal_value" sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -352,7 +408,7 @@ def my_form_open(dialog, layer, feature):
           <description></description>
           <projectionacronym></projectionacronym>
           <ellipsoidacronym></ellipsoidacronym>
-          <geographicflag>false</geographicflag>
+          <geographicflag>true</geographicflag>
         </spatialrefsys>
       </srs>
       <resourceMetadata>
@@ -375,7 +431,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent></extent>
@@ -475,7 +531,6 @@ def my_form_open(dialog, layer, feature):
   </projectlayers>
   <layerorder>
     <layer id="table_for_form_8a6a46b7_21ef_47d6_a5cd_134f6e84dace"></layer>
-    <layer id="table_for_relationnal_value_dc724c81_0004_4aec_89bf_2fa1e80fccb8"></layer>
   </layerorder>
   <properties>
     <DefaultStyles>
